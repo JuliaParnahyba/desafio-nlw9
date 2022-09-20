@@ -1,0 +1,203 @@
+/* #### RESETS #### */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* #### PADRÕES #### */
+header,
+main {
+  max-width: 1268px;
+  width: 90%;
+  position: center;
+  margin: 42px auto;
+  display: grid;
+  gap: 18px;
+}
+
+header {
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 160%;
+}
+
+section {
+  color: white;
+
+  background-image: linear-gradient(
+    90deg,
+    #c918418f 0%,
+    #926d928f 85%,
+    #5cc2e28f 100%
+  );
+
+  padding-top: 4px;
+  border-radius: 13px;
+}
+
+section div {
+  background: rgba(38, 38, 41, 0.85);
+  border-radius: 8px;
+  padding-top: 24px;
+  padding: 32px;
+}
+
+/* Títulos */
+section h2 {
+  font-weight: 900;
+  font-size: 28px;
+}
+
+/* Parágrafos */
+section p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #a1a1aa;
+
+  padding-top: 3px;
+}
+
+/* Listas */
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+section ul li img {
+  width: 90px;
+  border-radius: 8px;
+  border: 2px solid #555555;
+}
+
+footer {
+  display: grid;
+  color: #a1a1aa;
+  justify-content: center;
+  margin: 42px auto;
+}
+
+/* #### ESTILIZAÇÃO #### */
+body {
+  background-image: url(./assets/bg.jpg);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+header #avatar img {
+  width: 120px;
+  background-image: linear-gradient(
+    90deg,
+    #c91842 0%,
+    #926d92 85%,
+    #5cc2e2 100%
+  );
+  border-radius: 50%;
+  padding: 3px;
+
+  transition: transform 0.4s;
+
+  animation: fromTop 0.9s 0.4s backwards;
+}
+
+header img:hover {
+  transform: scale(1.2);
+}
+
+header #nav .social-list {
+  display: flex;
+  gap: 32px;
+}
+
+header #nav ul {
+  animation: fromRight 0.9s 0.4s backwards;
+}
+
+header #nav .social-list li {
+  transition: transform 0.4s;
+}
+
+header #nav .social-list li:hover {
+  transform: scale(1.5);
+}
+
+section ul li {
+  transition: transform 0.4s;
+}
+
+section ul li:hover {
+  transform: scale(1.15);
+}
+
+main section {
+  animation: fromBottom 0.7s backwards;
+}
+
+main section:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+main section:nth-child(2) {
+  animation-delay: 1s;
+}
+
+main section:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+/* #### ANIMAÇÃO #### */
+@keyframes fromTop {
+  from {
+    /* ponto de início */
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    /* ponto de conclusão */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromRight {
+  from {
+    /* ponto de início */
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    /* ponto de conclusão */
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    /* ponto de início */
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    /* ponto de conclusão */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
