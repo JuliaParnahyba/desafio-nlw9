@@ -12,8 +12,8 @@ ul {
 /* #### PADRÕES #### */
 header,
 main {
-  max-width: 1268px;
-  width: 90%;
+  max-width: 1200x;
+  width: 80%;
   position: center;
   margin: 42px auto;
   display: grid;
