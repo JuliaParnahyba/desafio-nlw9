@@ -92,7 +92,7 @@ footer {
 /* #### ESTILIZAÇÃO #### */
 body {
   background-image: url(./assets/bg.jpg);
-  background-position: center;
+  background-position: top;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: black;
