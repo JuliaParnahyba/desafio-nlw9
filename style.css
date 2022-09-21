@@ -37,9 +37,9 @@ section {
 
   background-image: linear-gradient(
     90deg,
-    #c918418f 0%,
-    #926d928f 85%,
-    #5cc2e28f 100%
+    #ff003c65 0%,
+    #a862a865 85%,
+    #00c3ff65 100%
   );
 
   padding-top: 4px;
@@ -48,7 +48,7 @@ section {
 }
 
 section div {
-  background: rgba(38, 38, 41, 0.85);
+  background: rgba(38, 38, 41, 0.781);
   border-radius: 8px;
   padding-top: 24px;
   padding: 32px;
@@ -92,6 +92,7 @@ footer {
   color: #a1a1aa;
   justify-content: center;
   margin: 42px auto;
+  margin-bottom: 12px;
 }
 
 /* #### ESTILIZAÇÃO #### */
@@ -101,6 +102,19 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: black;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #333333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #818181;
+  border-radius: 4px;
 }
 
 header #avatar img {
@@ -138,6 +152,17 @@ header #nav .social-list li {
 
 header #nav .social-list li:hover {
   transform: scale(1.5);
+}
+
+section ul::-webkit-scrollbar {
+  background-color: #555555;
+  height: 8px;
+  border-radius: 8px;
+}
+
+section ul::-webkit-scrollbar-thumb {
+  background-color: #818181;
+  border-radius: 8px;
 }
 
 section ul li {
