@@ -16,7 +16,7 @@ main {
   width: 80%;
   position: center;
   margin: 42px auto;
-  display: grid;
+  display: block;
   gap: 18px;
 }
 
@@ -44,6 +44,7 @@ section {
 
   padding-top: 4px;
   border-radius: 13px;
+  margin-bottom: 24px;
 }
 
 section div {
@@ -71,9 +72,10 @@ section p {
 /* Listas */
 section ul {
   display: flex;
-  flex-wrap: wrap;
   gap: 16px;
   margin-top: 24px;
+
+  overflow-x: auto;
 }
 
 section ul li img {
